@@ -30,14 +30,14 @@ public class Bowling
 
    boolean jetsPossible(){
         for(int i=0; i<scores.size();i++){
-            if(score >10 || score<0){
+            if(scores.size() >10 || scores.size()<0){
                 return false;
             }
         }
        return true;
    }
 
-   int getJets(){
+    ArrayList<Integer> getJets(){
         return scores;
    }
 
