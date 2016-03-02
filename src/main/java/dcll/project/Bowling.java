@@ -4,7 +4,7 @@ package dcll.project;
  * Hello world!
  *
  */
-public class App 
+public class Bowling
 {
     public static void main( String[] args )
     {

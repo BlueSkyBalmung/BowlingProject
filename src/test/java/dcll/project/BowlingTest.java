@@ -4,10 +4,12 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.ArrayList;
+
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class BowlingTest
     extends TestCase
 {
     /**
@@ -15,7 +17,7 @@ public class AppTest
      *
      * @param testName name of the test case
      */
-    public AppTest( String testName )
+    public BowlingTest(String testName)
     {
         super( testName );
     }
@@ -25,14 +27,18 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+        return new TestSuite( BowlingTest.class );
     }
 
     /**
-     * Rigourous Test :-)
+     *
      */
-    public void testApp()
+    public void Test()
     {
+        ArrayList<Integer> jeu = new ArrayList<Integer>(12);
+        for (int i = 0; i < 10; i++)
+            jeu.add(0);
+        Bowling bowling = new Bowling(jeu);
         assertTrue( true );
     }
 }
