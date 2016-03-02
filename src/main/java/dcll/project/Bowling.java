@@ -28,6 +28,7 @@ public class Bowling
        return score;
    }
 
+
    boolean jetsPossible(){
         for(int i=0; i<scores.size();i++){
             if(scores.size() >10 || scores.size()<0){
