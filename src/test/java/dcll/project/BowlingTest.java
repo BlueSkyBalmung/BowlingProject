@@ -1,7 +1,6 @@
 package dcll.project;
 
 import junit.framework.Test;
-
 import java.util.ArrayList;
 
 public class BowlingTest
@@ -97,5 +96,6 @@ public class BowlingTest
         bowling.setJets(jets);
 
         assertTrue(bowling.verifierJets());
+
     }
 }
