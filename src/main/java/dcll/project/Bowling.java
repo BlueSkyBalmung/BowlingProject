@@ -1,15 +1,10 @@
 package dcll.project;
 
 import java.util.ArrayList;
-import java.util.Random;
 
-/**
- * Hello world!
- *
- */
 public class Bowling implements IBowling
 {
-    ArrayList<Integer> scores;
+   private ArrayList<Integer> scores;
    public Bowling(ArrayList<Integer> i){
         scores=i;
    }
