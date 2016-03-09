@@ -7,14 +7,15 @@ import java.util.Random;
  * Hello world!
  *
  */
-public class Bowling
+public class Bowling implements IBowling
 {
     ArrayList<Integer> scores;
    public Bowling(ArrayList<Integer> i){
         scores=i;
    }
 
-   public int jouerPartie(){
+
+    public int jouerPartie(){
         int current=0;
         int score=0;
         for(int i=0; i<10 || scores.size()==current;i++){
@@ -29,7 +30,7 @@ public class Bowling
    }
 
 
-   boolean jetsPossible(){
+   public boolean jetsPossible(){
         for(int i=0; i<scores.size();i++){
             if(scores.size() >10 || scores.size()<0){
                 return false;
@@ -38,11 +39,11 @@ public class Bowling
        return true;
    }
 
-    ArrayList<Integer> getJets(){
+    public ArrayList<Integer> getJets(){
         return scores;
    }
 
-   void setJets(ArrayList<Integer> i) {
+   public void setJets(ArrayList<Integer> i) {
        scores = i;
    }
 }
