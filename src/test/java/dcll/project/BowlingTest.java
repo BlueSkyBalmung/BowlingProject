@@ -8,29 +8,8 @@ import junit.framework.TestSuite;
  * Unit test for simple App.
  */
 public class BowlingTest
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public BowlingTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( BowlingTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
+   @org.junit.Test
     public void testApp()
     {
         assertTrue( true );
